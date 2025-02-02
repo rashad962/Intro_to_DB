@@ -14,6 +14,7 @@ def create_database():
             cursor = connection.cursor()
 
             # Create the database if it doesn't exist
+            # NOTE: No SELECT or SHOW statements are used here
             cursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
             # Print success message
